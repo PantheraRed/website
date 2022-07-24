@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PantheraRed</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/41539361?v=4">
+    <script>
+      if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+            'beforeend',
+            '<link rel="stylesheet" href="/styles/light-theme.css" onload="document.documentElement.style.display = ``">'
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="/styles/dark-theme.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/styles/light-theme.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="/styles/default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+  </head>
+  <body>
+    <div id="header">
+      <dark-mode-toggle permanent></dark-mode-toggle>
+    </div>
+    <div id="body">
+      <div id="profile-card">
+        <div id="profile">
+          <a href="/">
+            <img id="avatar" src="https://avatars.githubusercontent.com/u/41539361?v=4" alt="avatar" title="PantheraRed" />
+          </a>
+          <div id="year">Since 2020</div>
+          <div id="links">
+            <a href="https://github.com/PantheraRed" target="_blank">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://twitter.com/PantheraRed" target="_blank">
+              <i class="devicon-twitter-original"></i>
+            </a>
+          </div>
+        </div>
+        <div id="desc">
+          <b>About:</b>
+          <p>Hi, my name is Red. A programmer. Interested in C, C++ and Rust. My mastery is in JavaScript. However, I suck at frontend.</p>
+          <b>Hobbies:</b>
+          <p>Programming, Arts, Chess, Hiking, Collecting (coins, games, etc).</p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>© PantheraRed 2022</p>
+    </div>
+  </body>
+</html>

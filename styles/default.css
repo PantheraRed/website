@@ -1,0 +1,114 @@
+:root {
+  --duration: 0.5s;
+  --timing: ease;
+}
+
+body {
+  margin: 0;
+  transition: color var(--duration) var(--timing),
+    background-color var(--duration) var(--timing);
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#body {
+  padding: 10%;
+}
+
+#profile-card {
+  border: 1px var(--profile-card-border-color) solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--profile-card-shadow-color);
+  transition: border var(--duration) var(--timing),
+    box-shadow var(--duration) var(--timing);
+}
+
+#profile-card:hover {
+  border: 1px var(--profile-card-hover-border-color) solid;
+  box-shadow: 0 0 15px var(--profile-card-shadow-color);
+}
+
+#profile {
+  border-bottom: 1px solid var(--profile-border-bottom-color);
+  padding: 10px 20px 10px 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: border-bottom var(--duration) var(--timing);
+}
+
+#avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px var(--avatar-shadow-color);
+  transition: box-shadow var(--duration) var(--timing);
+}
+
+#avatar:hover {
+  cursor: pointer;
+}
+
+#year {
+  height: 20px;
+  width: 100px;
+  background: var(--year-background-color);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 25px;
+  transition: background var(--duration) var(--timing);
+}
+
+#year:hover {
+  background: var(--year-hover-background-color);
+  cursor: pointer;
+}
+
+#links {
+  margin-top: 10px;
+}
+
+#links a {
+  margin: 5px;
+  color: var(--link-text-color);
+}
+
+#desc {
+  margin: 20px;
+}
+
+#desc b {
+  color: var(--desc-title-text-color);
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+dark-mode-toggle {
+  --dark-mode-toggle-dark-icon: url("/images/moon-icon.svg");
+  --dark-mode-toggle-light-icon: url("/images/sun-icon.svg");
+  --dark-mode-toggle-icon-size: 45px;
+  --dark-mode-toggle-icon-filter: invert(100%);
+}

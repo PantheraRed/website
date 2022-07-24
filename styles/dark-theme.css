@@ -1,0 +1,13 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --profile-card-border-color: #dddddd;
+  --profile-card-shadow-color: #dddddd;
+  --profile-card-hover-border-color: white;
+  --profile-border-bottom-color: grey;
+  --avatar-shadow-color: #dddddd;
+  --year-background-color: grey;
+  --year-hover-background-color: #dddddd;
+  --link-text-color: white;
+  --desc-title-text-color: #dddddd;
+}
