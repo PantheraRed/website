@@ -23,7 +23,7 @@ a {
 }
 
 #body {
-  padding: 10%;
+  padding: 9%;
 }
 
 #profile-card {
@@ -98,7 +98,7 @@ a {
 }
 
 #footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
